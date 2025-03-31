@@ -35,6 +35,14 @@ This project is a Laravel-based e-commerce platform that integrates Stripe for p
 - MySQL
 - Bootstrap 5
 
+### .env Configuration
+
+Additionally, update the following in the `.env` file:
+ 
+- STRIPE_KEY=
+- STRIPE_SECRET=
+- STRIPE_WEBHOOK_SECRET=
+ 
 ### Author
 
 **Selvaganesh**
