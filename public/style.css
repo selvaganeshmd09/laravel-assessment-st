@@ -1,0 +1,206 @@
+/* PRODUCT GRID PAGE */
+:root {
+    --primary-color: #4a5568;
+    --hover-shadow: 0 10px 20px rgba(74, 85, 104, 0.15);
+    --bg-color: #f7f7f7;
+    --orange-color: #ff6b35;
+    --orange-hover: #ff5722;
+    --dark-hover:#292929;
+    --orange-light: #fff0eb;
+  }
+
+  body {
+    background: var(--bg-color);
+    color: #2d3748;
+  }
+
+  .navbar {
+    background: white;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .navbar-brand {
+    color: var(--primary-color) !important;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .navbar-brand:hover {
+    color: var(--primary-color);
+  }
+  li.nav-item .nav-link{
+    font-size: 1.1rem;
+    color: var(--orange-color) !important;
+    transition-duration: .2s;
+  }
+  li.nav-item .nav-link:hover{
+    font-size: 1.1rem;
+    color: var(--dark-hover) !important;
+  }
+  .form-control:focus {
+    border-color: var(--orange-color) !important;
+    box-shadow: none !important;
+  }
+  .card {
+    background: white;
+    /* border: none !important; */
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+
+  .card:hover {
+    /* transform: translateY(-5px); */
+    box-shadow: var(--hover-shadow);
+  }
+  .card-header {
+        padding: 1.3rem;
+    }
+    .card-header h5{
+        color: var(--orange-color);
+    }
+  .prd-grid .card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-shadow);
+  }
+
+  .card-title {
+    color: #2d3748;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .card-text {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+  }
+
+  .btn {
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .btn-primary {
+    background: var(--orange-color);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .btn-primary:hover {
+    background: var(--orange-hover);
+    transform: translateY(-1px);
+    border-color: var(--orange-hover);
+    box-shadow: 0 4px 8px rgba(255, 107, 53, 0.3);
+  }
+  .btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus{
+    box-shadow: 0 4px 8px rgba(255, 107, 53, 0.3) !important;
+  }
+  .btn-check:focus+.btn-primary, .btn-primary:focus {
+        background-color: var(--orange-hover);
+        border-color: var(--orange-hover);
+        box-shadow: 0 0 0 .25rem rgba(255, 107, 53, 0.3) !important;
+    }
+    .btn-link {
+        color: var(--orange-color);
+    }
+    .btn-link:hover {
+        color: var(--orange-hover);
+    }
+  .display-4 {
+    color: #2d3748;
+    font-weight: 700;
+    position: relative;
+  }
+
+  .display-4::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: var(--primary-color);
+  }
+
+  .badge {
+    padding: 0.5em 1em;
+    font-weight: 500;
+  }
+
+  .bg-status {
+    background-color: #edf2f7;
+    color: var(--primary-color);
+  }
+
+  @media (max-width: 768px) {
+    .card-title {
+      font-size: 1rem;
+    }
+
+    .card-text {
+      font-size: 1.1rem;
+    }
+  }
+/* pagination */
+.page-link {
+    color: var(--orange-hover);
+    padding: 0.85rem 1rem;
+    line-height: 1rem;
+}
+.page-item.active .page-link {
+    background-color: var(--dark-hover);
+    border-color: var(--dark-hover);
+}
+.page-link:focus {
+    color:  var(--orange-hover);
+    box-shadow: 0 0 0 .25rem rgba(33, 33, 33, 0.25);
+}
+.page-link:hover {
+    color:  var(--orange-hover);
+}
+.page-link:hover{
+
+}
+
+/* purchase page */
+.badge {
+    padding: 8px 16px;
+    font-weight: 500;
+    border-radius: 20px;
+}
+.text-orange {
+    color: var(--orange-color);
+}
+.bg-orange-light {
+    background-color: var(--orange-light);
+}
+.btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #ff9b79;
+    border-color: #ff9b79;
+    pointer-events: none;
+}
+.text-primary{
+
+    color: var(--orange-color) !important;
+}
+.bg-primary {
+    background-color: var(--orange-color) !important;
+}
+.text-white{
+    color: #ffffff !important;
+}
+.no-prd-error{
+    background: var(--orange-light);
+    border: none !important;
+    padding: 1.6rem;
+    color: #000000 !important;
+}
